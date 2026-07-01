@@ -907,15 +907,19 @@ During Dyrected integration:
 
 Good local separation:
 
+```typescript
 bodyHtml: "<h2>...</h2><p>...</p><ul><li>...</li></ul>"
+```
 
 Bad local separation:
 
+```typescript
 body: [
 "Paragraph one",
 "Paragraph two",
 "Paragraph three"
 ]
+```
 
 Only use arrays when the content is truly a repeatable list of items, such as FAQs, services, testimonials, steps, features, links, or cards.
 
@@ -1402,7 +1406,7 @@ Reference custom inputs and slots with registered string keys in serializable co
 ## Supported field types
 
 <!-- GENERATED:FIELD_TYPES:START -->
-
+`text`, `textarea`, `richText`, `number`, `boolean`, `date`, `datetime`, `time`, `select`, `multiSelect`, `radio`, `relationship`, `array`, `object`, `json`, `blocks`, `image`, `email`, `url`, `icon`, `join`, `row`
 <!-- GENERATED:FIELD_TYPES:END -->
 
 ## Compiled recipes
